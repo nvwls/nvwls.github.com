@@ -11,12 +11,13 @@ pygments: true
 # so be sure to set them if your theme uses them.
 #
 title : NVWLS
-tagline: R@mbl!ngs 0f th% v0w%l ch@ll%ng%d
+tagline: Personal Ramblings
 author :
   name : Joe Nuspl
   email : nuspl@nvwls.com
   github : nvwls
-  twitter : @JoeNuspl
+  twitter : JoeNuspl
+
 #  feedburner : feedname
 
 # The production_url is only used when full-domain names are needed
@@ -27,7 +28,7 @@ author :
 # Else if you are pushing to username.github.io, replace with your username.
 # Finally if you are pushing to a GitHub project page, include the project name at the end.
 #
-production_url : http://username.github.io
+production_url : http://nvwls.github.io
 
 # All Jekyll-Bootstrap specific configurations are namespaced into this hash
 #
