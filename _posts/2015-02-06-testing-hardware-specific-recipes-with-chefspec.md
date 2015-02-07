@@ -70,7 +70,7 @@ A better way of doing this using real data. I have a gem CSH (Chef
 Spec Helpers) that contains ohai data from all of the hardware
 platforms in our data centers.
 
----
+~~~
 $ ls -1 hardware
 ESX_Guest.json
 Intel_D945GCLF2.json
@@ -89,7 +89,7 @@ ProLiant_DL360p_Gen8.json
 ProLiant_DL380p_Gen8.json
 VirtualBox_Guest.json
 Xen_Guest.json
----
+~~~
 
 The excerpt from CSH:
 
