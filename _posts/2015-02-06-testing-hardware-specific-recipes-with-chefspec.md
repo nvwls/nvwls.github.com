@@ -15,7 +15,7 @@ the correct resources get created?
 
 Given the following recipe:
 
-```
+~~~ ruby
 require 'chef/sugar'
 
 case node.deep_fetch('dmi', 'system', 'manufacturer')
@@ -25,11 +25,11 @@ when 'Dell Inc.'
 when 'HP'
   package 'hpacucli'
 end
-```
+~~~
 
 You can write chefspec test like:
 
-```ruby
+~~~ ruby
 require 'chefspec'
 
 describe 'raid::utils' do
@@ -59,7 +59,7 @@ describe 'raid::utils' do
     end
   end
 end
-```
+~~~
 
 This works but it is a rather short sided approach. What happens in
 six months when you need to support another hardware vendor?  You
@@ -70,7 +70,7 @@ A better way of doing this using real data. I have a gem CSH (Chef
 Spec Helpers) that contains ohai data from all of the hardware
 platforms in our data centers.
 
-```
+---
 $ ls -1 hardware
 ESX_Guest.json
 Intel_D945GCLF2.json
@@ -89,11 +89,11 @@ ProLiant_DL360p_Gen8.json
 ProLiant_DL380p_Gen8.json
 VirtualBox_Guest.json
 Xen_Guest.json
-```
+---
 
 The excerpt from CSH:
 
-```ruby
+~~~ ruby
 # encoding: UTF-8
 
 module CSH
@@ -140,11 +140,11 @@ module CSH
     end
   end
 end
-```
+~~~~
 
 The chefspec tests then become:
 
-```ruby
+~~~ ruby
 require 'chefspec'
 require 'csh'
 
@@ -173,7 +173,7 @@ describe 'raid::utils' do
     end
   end
 end
-```
+~~~
 
 This while iterate over all hardware platforms and run the tests. Now
 if another hardware platform to the mix, I can just update CSH.
@@ -181,16 +181,16 @@ Rarely do I have to update the spec tests themselves.
 
 `CSH.each_hardware` provides a lot of flexibility for test writing.  Say I have a recipe:
 
-```ruby
+~~~ ruby
 return if node['virtualization']['role'] == 'guest'
 
 package 'foo'
 package 'bar'
-```
+~~~
 
 Corresponding tests would be:
 
-```ruby
+~~~ ruby
 describe 'dummy::test' do
   CSH.each_hardware do |machine, json|
     context "on #{machine}" do
@@ -211,7 +211,7 @@ describe 'dummy::test' do
     end
   end
 end
-```
+~~~
 
 When you know a recipe is a no-op, I prefer
 `expect(runner.resource_collection).to be_empty` over a bunch of
