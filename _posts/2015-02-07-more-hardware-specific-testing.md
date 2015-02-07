@@ -70,5 +70,5 @@ describe 'console::default' do
 end
 ~~~
 
-Now that the attributes have verified, you can write spec tests for the recipe
+Now that the attributes have been verified, you can write spec tests for the recipe
 code.
