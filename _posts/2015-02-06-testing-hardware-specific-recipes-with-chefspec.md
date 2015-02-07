@@ -15,7 +15,7 @@ the correct resources get created?
 
 Given the following recipe:
 
-```ruby
+```
 require 'chef/sugar'
 
 case node.deep_fetch('dmi', 'system', 'manufacturer')
