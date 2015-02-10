@@ -3,7 +3,7 @@ layout: post
 title: "zap-directory-now-supports-recursive"
 description: ""
 category:
-tags: []
+tags: ["chef", "zap"]
 ---
 {% include JB/setup %}
 

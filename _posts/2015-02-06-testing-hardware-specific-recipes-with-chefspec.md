@@ -3,7 +3,7 @@ layout: post
 title: "Testing hardware-specific recipes with chefpsec"
 description: ""
 category:
-tags: []
+tags: ["chefspec"]
 ---
 {% include JB/setup %}
 
