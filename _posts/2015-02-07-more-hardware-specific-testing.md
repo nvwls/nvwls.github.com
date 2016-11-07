@@ -5,7 +5,6 @@ description: ""
 category:
 tags: ["chefspec"]
 ---
-{% include JB/setup %}
 
 Most of chefspec examples test whether recipes create various resources.  While
 useful, don't overlook that attribute files can also contain logic. This code is

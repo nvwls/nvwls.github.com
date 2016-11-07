@@ -5,7 +5,6 @@ description: ""
 category:
 tags: ["chefspec"]
 ---
-{% include JB/setup %}
 
 One of the complaints I hear about chefspec is that you cannot test
 hardware-specific recipes with chefspec.  Oh, but you can.

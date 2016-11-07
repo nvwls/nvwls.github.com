@@ -5,7 +5,6 @@ description: ""
 category:
 tags: ["chef", "zap"]
 ---
-{% include JB/setup %}
 
 [https://github.com/nvwls/zap] is a library cookbook for garbage collecting chef
 controlled resource sets. For those unfamilar with zap, please check out my

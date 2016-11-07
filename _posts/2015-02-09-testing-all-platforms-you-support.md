@@ -5,7 +5,6 @@ description: ""
 category:
 tags: ["chefspec"]
 ---
-{% include JB/setup %}
 
 A few days ago, I blogged about using `CSH.each_hardware` to ensure you have
 code coverage for the various hardware platforms you support. I use the same

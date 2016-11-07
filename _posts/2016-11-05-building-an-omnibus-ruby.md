@@ -5,7 +5,6 @@ description: ""
 category:
 tags: []
 ---
-{% include JB/setup %}
 
 At the 2016 Chef Community Summit, I attended the "Air-Gapped
 Environments" session. Although I do not work in an air-gapped
