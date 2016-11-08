@@ -15,7 +15,7 @@ environment, our environment has a couple of similar restrictions:
 
 Our solution was to build an omnibus ruby, installing all the gems on
 a build server that does have compilers. Therefore when the
-package was installed the binary gem, mysql2, already installed.
+package was installed the binary gem, mysql2, is already installed.
 
 "Cool idea!" was one response. "How'd you do that?" was another. In
 the true spirit of open spaces, my response was to suggest that they
