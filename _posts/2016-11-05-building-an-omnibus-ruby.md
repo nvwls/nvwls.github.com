@@ -14,7 +14,7 @@ environment, our environment has a couple of similar restrictions:
 * No compilers
 
 Our solution was to build an omnibus ruby, installing all the gems on
-a build server that does have has compilers. Therefore when the
+a build server that does have compilers. Therefore when the
 package was installed the binary gem, mysql2, already installed.
 
 "Cool idea!" was one response. "How'd you do that?" was another. In
