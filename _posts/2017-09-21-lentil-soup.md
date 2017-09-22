@@ -9,7 +9,7 @@ tags: []
 I love soup! Whenever it gets cool out, I get a hankering to make soup. To paraphase John Steinbeck:
 "What good is the crispness of fall, without the heat of summer to give it sweetness."
 
-In honor of Timerline Lodge getting 14 inchess of snow, I decided to make lentil soup:
+In honor of Timerline Lodge getting 14 inches of snow, I decided to make lentil soup:
 
 ![Lentil Soup]({{ site.url }}/assets/lentil-soup.jpg)
 
