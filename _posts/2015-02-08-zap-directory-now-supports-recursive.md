@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "zap-directory-now-supports-recursive"
+title: "zap_directory now supports recursive"
 description: ""
 category:
 tags: ["chef", "zap"]
@@ -120,4 +120,3 @@ of files to delete going forward.  You don't know if the node was previously
 running v1.0, v1.1, or v2.0 you need to cover all the bases.
 
 Hopefully this example helps illustrate the power of the zap paradigm.
-
