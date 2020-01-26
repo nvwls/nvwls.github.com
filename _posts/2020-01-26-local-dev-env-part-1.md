@@ -66,7 +66,7 @@ Test Summary: 4 successful, 0 failures, 0 skipped
 
 At first, I was hesitant to use .gemrc as the example because `:sources` is a symbol key in .gemrc.
 inspec does not handle symbol keys so I had to override the `subject` of the block. In the end I
-I thought others might has similar set ups so providing a working example for this corner case
+thought others might has similar set ups so providing a working example for this corner case
 would be helpful.
 
 As a chef shop, we have controls for .gemrc, bundler, Berkshelf, docker, and various other
