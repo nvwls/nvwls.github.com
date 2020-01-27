@@ -35,7 +35,7 @@ control 'gemrc' do
 
   describe yaml(path) do
     describe ':sources' do
-      subject { YAML.load_file(path)[:sources] }
+      subject { YAML.load(file(path).content)[:sources] }
       it { should_not be_empty }
       it { should_not include(/rubygems.org/) }
       it { should include(/artifactory.nvwls.com/) }
@@ -75,6 +75,6 @@ encountered a new issue, we wrote a new control to verify a configuration. Actua
 tests are of the `should_not` variety. For example, certain versions of gems were known to be
 buggy so we verified those were not installed.
 
-This work was inspired by the `brew doctor` command from (Homebrew)[https://brew.sh].
+This work was inspired by the `brew doctor` command from [Homebrew](https://brew.sh).
 
 Stayed tuned for part two where we tackle the question: Are you running the latest version?
