@@ -77,4 +77,5 @@ buggy so we verified those were not installed.
 
 This work was inspired by the `brew doctor` command from [Homebrew](https://brew.sh).
 
-Stayed tuned for part two where we tackle the question: Are you running the latest version?
+Stayed tuned for [part two](/2020/01/27/local-dev-env-part-2.html) where we tackle the question:
+Are you running the latest version?
