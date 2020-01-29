@@ -108,4 +108,4 @@ Profile Summary: 0 successful, 1 failures, 0 skipped
 Test Summary: 5 successful, 1 failures, 0 skipped
 ~~~
 
-In part 3, we'll discuss how to self-update.
+In [part 3](/2020/01/28/local-dev-env-part-3.html), we'll discuss how to self-update.
